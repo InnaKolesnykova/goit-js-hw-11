@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 10</title>
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
-
-    <script src="index.js" type="module"></script>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="search-btn" type="submit">
+        <svg class="search-icon" width="24px" height="24px">
+          <use href="./sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+    <div class="gallery">
+      <div class="lds-dual-ring"></div>
+    </div>
+    <button class="load-more visually-hidden">Load more images!</button>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
-  
-
-  

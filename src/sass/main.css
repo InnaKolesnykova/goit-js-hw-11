@@ -1,0 +1,165 @@
+form {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(126, 28, 146);
+  top: 0;
+  left: 0;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-size: 24px;
+}
+
+input {
+  height: 24px;
+  padding: 8px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  font-family: inherit;
+}
+
+input:hover {
+  fill: rgb(255, 116, 255);
+  border-color: rgb(255, 116, 255);
+}
+
+input::-moz-placeholder {
+  font-family: inherit;
+  color: white;
+}
+
+input::placeholder {
+  font-family: inherit;
+  color: white;
+}
+
+button {
+  height: 44px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  fill: white;
+  font-family: inherit;
+  border: 2px solid white;
+}
+
+button:hover {
+  fill: rgb(255, 116, 255);
+  border-color: rgb(255, 116, 255);
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.gallery {
+  margin-top: 90px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+}
+
+.photo-card {
+  margin: 0;
+  background-color: rgb(81, 81, 81);
+  padding: 0px;
+}
+
+.img-box-set {
+  width: 420px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-box-set img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.load-more {
+  background-color: rgb(126, 28, 146);
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 280px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=main.css.map */
